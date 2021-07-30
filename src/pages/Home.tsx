@@ -41,8 +41,11 @@ export function Home() {
         if (!roomRef.exists()) {
 
             alert('room does not exists.')
+            return;
 
         }
+
+        history.push(`/rooms/${roomCode}`);
 
     }
 
